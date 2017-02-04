@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Black &amp; White PIX</title>
+    <!-- bootstrap 4 css link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <!-- bootstrap 4 link end -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/respoinsv.css">
+  </head>
+
+  <body>
+  <div id="home"></div> <!--  placeholder för meny navigeringen  -->
+   <div class="site-wrapper">
+     
+<!--================================     HEADER      ==========================================0-->
+    
+     
+      <header>
+        <nav class="main-nav">
+            
+            <img type="button "id="burger-button" src="img/burger.svg" alt="menu button">
+
+            <ul class="nav-list">
+              <li>
+              <a href="#home">Hem</a>
+              </li>
+
+              <li>
+              <a href="#images">Images</a>
+              </li>
+              <li>
+              <a href="#photographers">Photographers</a>
+              </li>
+              <li>
+              <a href="#contact">Kontakt</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#myModal">Info</a>
+              </li>
+            </ul>
+        </nav>  <!-- /nav end -->
+        
+        
+<!--==============================  PRESENTATION SECTION  =====================================0-->
+     
+      
+        <section id="presentation-top">
+          <article class="presentation-wrapper">
+            <img src="img/logo.svg" class="presentation-logo" alt="logo">
+            <h2 id="welcomeText">
+              <!-- Texten till denna div kommer från javascript -->
+            </h2>
+          </article>
+        </section>
+
+
+      </header>  <!-- / header end -->
+      
+      
+      <div class="main-section-wrapper">  <!-- main-section-wrapper -->
+      
+      
+<!--================================   MAIN SECTION   ==========================================0-->
+         
+         
+<!--================================      IMAGES      ==========================================0-->
+       
+       
+        <div id="images"></div> <!-- placeholder för meny navigeringen -->
+        <h2 class="cat-header">Random Pix</h2>
+        <section class="images-wrapper">
+          <ul class="images-list">
+            <!--
+            
+                Här länkas alla bilderna.
+              
+            -->
+          </ul>
+        </section>
+        
+
+<!--===============================    PHOTOGRAPERS    =========================================0-->
+       
+       
+        <div id="photographers"></div> <!-- placeholder för meny navigeringen -->
+        <h2 class="cat-header">Photpgraphers</h2>
+        <section class="photographer-wrapper">
+          
+            <ul class="photographer-list photo-content">
+              <!-- 
+              
+                  Här kommer list på alla photogaferna från javasript
+              
+                -->
+            </ul>  <!--  ../end photographer-list photo-content  -->
+          
+          
+<!--===============================  KONTAKTFORMULÄR ===========================================0-->
+          
+          
+            <div id="contact"></div>  <!-- placeholder för meny navigeringen -->
+            <div class="photo-content">
+              <h2 class="cat-header">Kontakta Oss</h2>
+              <form>
+                <div class="input-group">
+                  <input type="text" id="name" name="user-name" required>
+                  <label for="name">Namn</label>
+                  <span></span>
+                </div>
+                <div class="input-group">
+                  <input type="email" id="email" name="user-email" required>
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                  <input type="text" id="phone" name="user-phone" required>
+                  <label for="phone">Mobilnr</label>
+                </div>
+                <div class="input-group">
+                  <textarea type="text" id="message" required></textarea>
+                  <label for="message">Meddelande</label>
+                </div>
+                <div class="btn-wrap">
+                  <button type="button" class="btn submit" data-toggle="modal" data-target="#myModal">
+                  Info
+                  </button>
+                  <button type="submit" class="btn submit">Skicka</button>
+                </div>
+              </form>
+            </div>    <!-- ../ end photo-content -->
+        </section>  <!-- ../ end photograper-wrapper -->
+      
+      
+
+<!--====================================  FOOTER ===============================================0-->
+     
+      <footer>
+        <h3>Du hittar oss här</h3>
+        <div class="footer-social-wrapper">
+          <img src="img/in.svg" alt="in icon">
+          <img src="img/fb.svg" alt="fb icon">
+        </div>
+        <p>&copy; Jesper Gullman 2016</p>
+      </footer>
+      </div>  <!-- /.main-section-wrapper end  -->
+    </div>  <!-- /site-wrapper end -->
+    
+    
+    
+<!--=====================================  MODAL ===============================================0-->
+            
+    
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Info Om Sidan</h4>
+        </div>
+        <div class="modal-body">
+          <h2>YHJUST16</h2>
+          <h5>Javascript Frontend Utvecklig</h5>
+          <p>Kul att du tittade in på denna sidan, hela denna sidan är en del av mitt
+           slutprojekt i kursen HTML, CSS JavaScript &amp; Webstandarder.<br>
+            <h5>Webmanipulation</h5>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>JQUERY</li>
+              <li>BOOTSTRAP</li>
+            </ul>
+            <p>är några av de färdigheter som jag har använt mig av.
+              vill du ha mer information om sidan, och mig som har skapat den sp hittar du det på GitHub. <a href="https://github.com/MrGullman">MrGullman GitHub</a>
+          </p>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn submit" data-dismiss="modal">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+<!--====================================  SCRIPTS  ============================================0-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="js/photographers.js"></script>  <!-- photographers -->
+    <script src="js/images.js"></script>  <!-- images -->
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
